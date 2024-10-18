@@ -1,0 +1,158 @@
+:root {
+  --primary-color: #00adef;
+  --secondary-color: #ff5a5f;
+  --text-color: #484848;
+  --background-color: #f5f5f5;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+nav {
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0095d1;
+}
+
+/* Forms */
+form {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Home page */
+.hero {
+  background-image: url('https://www.uniplaces.com/static/images/homepage/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+/* Profile, FAQs, Rules pages */
+.content-section {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin: 2rem 0;
+}
+
+/* Chat */
+.chat-container {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.chat-messages {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  margin-right: 1rem;
+}
